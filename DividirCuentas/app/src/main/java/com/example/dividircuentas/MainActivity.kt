@@ -78,16 +78,20 @@ fun Greeting(modifier: Modifier = Modifier) {
                 checked = redondear,
                 onCheckedChange = {
                     redondear = it
+                    if (!it) {
+                        propina = 0f
+                    }
                 }
             )
         }
 
         Text(text = "Porcentaje de propina: ${propina.toInt()}%")
         Slider(
-            value = propina,
-            onValueChange = { propina = it },
+            value = if (redondear) propina else 0f,
+            onValueChange = { if (redondear) propina = it },
             valueRange = 0f..25f,
-            steps = 4
+            steps = 4,
+            enabled = redondear
         )
 
         Button(
