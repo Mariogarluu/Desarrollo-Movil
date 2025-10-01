@@ -1,3 +1,6 @@
 [submodule "DividirCuentas"]
 	path = DividirCuentas
 	url = https://github.com/Mariogarluu/Dividir-Cuenta.git
+[submodule "DividirCuentasV2"]
+	path = DividirCuentasV2
+	url = https://github.com/Mariogarluu/Dividir-CuentaV2.git
