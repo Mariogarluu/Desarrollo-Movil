@@ -110,9 +110,43 @@ Desarrollo-Movil/
 ├── HolaMundo/              # Aplicación Android con Jetpack Compose
 ├── ParkingJava/            # Sistema de parking (procedural)
 ├── ParkingPoo/             # Sistema de parking (POO)
-├── DividirCuentas/         # (En desarrollo)
-├── DividirCuentasV2/       # (En desarrollo)
+├── DividirCuentas/         # Git submodule - Aplicación de dividir cuentas
+├── DividirCuentasV2/       # Git submodule - Versión 2 de dividir cuentas
+├── app-lol/                # Git submodule - Aplicación League of Legends
 └── README.md               # Este archivo
+```
+
+## 📦 Submódulos (Git Submodules)
+
+Este repositorio utiliza git submodules para incluir proyectos adicionales. Los submodules son repositorios independientes enlazados a este proyecto principal.
+
+### Submodules Incluidos:
+
+1. **DividirCuentas** - [Dividir-Cuenta](https://github.com/Mariogarluu/Dividir-Cuenta.git)
+2. **DividirCuentasV2** - [Dividir-CuentaV2](https://github.com/Mariogarluu/Dividir-CuentaV2.git)
+3. **app-lol** - [App-Lol](https://github.com/Mariogarluu/App-Lol.git)
+
+### Cómo trabajar con los submodules:
+
+**Inicializar los submodules después de clonar el repositorio:**
+```bash
+git submodule init
+git submodule update
+```
+
+**O clonar el repositorio con todos los submodules:**
+```bash
+git clone --recurse-submodules https://github.com/Mariogarluu/Desarrollo-Movil.git
+```
+
+**Actualizar todos los submodules a sus últimas versiones:**
+```bash
+git submodule update --remote --merge
+```
+
+**Ver el estado de los submodules:**
+```bash
+git submodule status
 ```
 
 ## 👨‍💻 Autor
